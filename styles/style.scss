@@ -1,0 +1,19 @@
+$bg-color: #0a0a0b;
+$text-color: #fff;
+
+html, body {
+  background-color: $bg-color;
+  color: $text-color;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-thumb {
+    background: #093a5b;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+

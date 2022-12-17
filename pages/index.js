@@ -1,6 +1,10 @@
+import ItemsComponent from '../components/Items.component';
+
 function Home() {
     return (
-        <div></div>
+        <div>
+            <ItemsComponent />
+        </div>
     )
 }
 
