@@ -6,10 +6,6 @@ function ItemsComponent() {
     const fetcher = url => fetch(url).then(r => r.json()).then(data => data.data);
     const {data, error} = useSWR('https://fortnite-api.com/v2/shop/br', fetcher);
 
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
-
     return (
         <div>
             <h1 className="text-2xl font-bold p-5">Daily</h1>
