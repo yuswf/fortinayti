@@ -30,7 +30,7 @@ function FeaturedComponent() {
                     {[1, 2, 3, 4, 5, 6].map((_, i) => (
                         <div key={i} className="bg-[#1f2024] rounded h-[300px]">
                             <div
-                                className="mt-6 mx-auto flex justify-center animate-pulse items-center mb-4 w-[200px] h-48 bg-gray-300 rounded dark:bg-gray-700">
+                                className="mt-6 mx-auto flex justify-center animate-pulse items-center mb-4 w-auto h-48 bg-gray-300 rounded dark:bg-gray-700">
                                 <svg className="w-12 h-12 text-gray-200 dark:text-gray-600"
                                      xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor"
                                      viewBox="0 0 640 512">

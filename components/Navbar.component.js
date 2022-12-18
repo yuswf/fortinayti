@@ -22,10 +22,10 @@ function NavbarComponent() {
     ]);
 
     return (
-        <div>
-            <ul className="flex p-5 gap-4">
+        <div className="mb-5">
+            <ul className="flex items-center justify-center p-5 gap-4">
                 {list.map((item, index) => (
-                    <li className={`${list[active].name === item.name ? 'bg-[#093a5b]' : 'bg-[#1f2024]'} cursor-pointer hover:bg-[#0a0a0b] transition-all ease-in rounded py-2 px-6 mt-5`} key={index} onClick={() => setActive(index)}>{item.name}</li>
+                    <li className={`${list[active].name === item.name ? 'bg-[#093a5b]' : 'bg-[#1f2024]'} cursor-pointer max-sm:text-sm max-md:text-md lg:text-xl hover:bg-[#0a0a0b] transition-all ease-in rounded py-2 px-6 mt-5`} key={index} onClick={() => setActive(index)}>{item.name}</li>
                 ))}
             </ul>
 
