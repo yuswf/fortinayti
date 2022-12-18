@@ -14,7 +14,7 @@ function FeaturedComponent() {
                     {arr.entries.map((entry, _) => (
                         <div key={_} className="bg-[#1f2024] rounded h-[300px]">
                             <img className="rounded mt-6 mx-auto" width="200" height="150"
-                                 src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg"/>
+                                 src={entry.newDisplayAsset?.materialInstances[0].images.Background} alt="bg"/>
 
                             <span className="flex justify-center mt-6">
                             <img className="w-6 h-6" src="https://fortnite-api.com/images/vbuck.png" alt="vb"/>&nbsp;
