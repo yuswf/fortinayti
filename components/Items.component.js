@@ -13,7 +13,7 @@ function ItemsComponent() {
             <div className="flex p-5 grid grid-cols-4 gap-4 max-md:grid-cols-3 max-sm:grid-cols-2">
                 {data?.daily?.entries.map((entry, _) => (
                     <div key={_} className="bg-[#1f2024] rounded h-[300px]">
-                        {entry.newDisplayAsset.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
+                        {entry?.newDisplayAsset?.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
                             ||
                             <div role="status"
                                  className="p-4 max-w-sm rounded animate-pulse md:p-6">
@@ -44,7 +44,7 @@ function ItemsComponent() {
             <div className="flex p-5 grid grid-cols-4 gap-4 max-md:grid-cols-3 max-sm:grid-cols-2">
                 {data?.featured?.entries.map((entry, _) => (
                     <div key={_} className="bg-[#1f2024] rounded h-[300px]">
-                        {entry.newDisplayAsset.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
+                        {entry?.newDisplayAsset?.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
                             ||
                             <div role="status"
                                  className="p-4 max-w-sm rounded animate-pulse md:p-6">
@@ -75,7 +75,7 @@ function ItemsComponent() {
             <div className="flex p-5 grid grid-cols-4 gap-4 max-md:grid-cols-3 max-sm:grid-cols-2">
                 {data?.specialFeatured?.entries.map((entry, _) => (
                     <div key={_} className="bg-[#1f2024] rounded h-[300px]">
-                        {entry.newDisplayAsset.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
+                        {entry?.newDisplayAsset?.materialInstances[0].images.Background && <img className="rounded mt-6 mx-auto" width="200" height="150" src={entry.newDisplayAsset.materialInstances[0].images.Background} alt="bg" />
                             ||
                             <div role="status"
                                  className="p-4 max-w-sm rounded animate-pulse md:p-6">
